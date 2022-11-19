@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('codes', function (Blueprint $table) {
             $table->id();
             $table->char('unique_code',7)->unique();
-            $table->timestamps();
         });
     }
 
